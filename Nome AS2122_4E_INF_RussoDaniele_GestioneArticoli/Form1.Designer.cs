@@ -63,6 +63,7 @@
             this.label5.Size = new System.Drawing.Size(45, 15);
             this.label5.TabIndex = 17;
             this.label5.Text = "Articoli";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // btnVisualizza
             // 
@@ -108,6 +109,7 @@
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dettagli articolo";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // cmbUnitaDiMisura
             // 
@@ -137,6 +139,7 @@
             this.txtCodice.Name = "txtCodice";
             this.txtCodice.Size = new System.Drawing.Size(152, 23);
             this.txtCodice.TabIndex = 5;
+            this.txtCodice.TextChanged += new System.EventHandler(this.txtCodice_TextChanged);
             // 
             // btnAggiungi
             // 
@@ -146,6 +149,7 @@
             this.btnAggiungi.TabIndex = 4;
             this.btnAggiungi.Text = "Aggiungi/modifica articolo";
             this.btnAggiungi.UseVisualStyleBackColor = true;
+            this.btnAggiungi.Click += new System.EventHandler(this.btnAggiungi_Click);
             // 
             // label4
             // 

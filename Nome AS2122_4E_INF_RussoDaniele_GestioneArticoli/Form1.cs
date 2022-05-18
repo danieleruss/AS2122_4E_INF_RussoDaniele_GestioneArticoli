@@ -16,5 +16,25 @@ namespace Nome_AS2122_4E_INF_RussoDaniele_GestioneArticoli
         {
 
         }
+
+        private void txtCodice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAggiungi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
