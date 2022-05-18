@@ -1,40 +1,32 @@
-namespace Nome_AS2122_4E_INF_RussoDaniele_GestioneArticoli
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace AS2122_4E_INF_TogniEmanuele_GestioneArticoli
 {
     public partial class Form1 : Form
     {
+        Dictionary<string, Articolo> articoli;
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lstVisualizza_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtCodice_TextChanged(object sender, EventArgs e)
-        {
-
+            articoli = new Dictionary<string, Articolo>();
         }
 
         private void btnAggiungi_Click(object sender, EventArgs e)
         {
+            var a = new Articolo(txtCodice.Text, txtDescrizione.Text, cmbUnitaDiMisura.Text, Convert.ToDouble(txtPrezzo.Text));
+            if (articoli.ContainsKey(a.Codice))
+                articoli[a.Codice] = a;
+            else articoli.Add(a.Codice, a);
 
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
+            lblArticoli.Text = $"Articoli({articoli.Count})";
         }
     }
 }
