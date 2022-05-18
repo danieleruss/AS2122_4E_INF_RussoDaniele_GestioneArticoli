@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AS2122_4E_INF_TogniEmanuele_GestioneArticoli
+namespace Nome_AS2122_4E_INF_RussoDaniele_GestioneArticoli
 {
     public partial class Form1 : Form
     {

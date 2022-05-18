@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AS2122_4E_INF_TogniEmanuele_GestioneArticoli
+namespace Nome_AS2122_4E_INF_RussoDaniele_GestioneArticoli
 {
     class Articolo
     {
